@@ -50,6 +50,7 @@ class SelectorButton extends StatelessWidget {
                     textStyle: selectorTextStyle,
                   ),
                   value: country,
+                  icon: SizedBox.shrink(),
                   items: mapCountryToDropdownItem(countries),
                   onChanged: isEnabled ? onCountryChanged : null,
                 ),
