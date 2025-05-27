@@ -20,7 +20,7 @@ Add `intl_phone_number_input_v2` to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  intl_phone_number_input_v2: ^0.0.2
+  intl_phone_number_input_v2: ^0.0.8
 ```
 
 Then, run `flutter pub get` to install the package.

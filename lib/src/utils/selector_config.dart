@@ -36,6 +36,12 @@ class SelectorConfig {
   /// Use safe area for selectorType=BOTTOM_SHEET
   final bool useBottomSheetSafeArea;
 
+  /// Color for a dropdown arrow icon, grey by default
+  final Color? dropdownColor;
+
+  /// Color for the cursor in dropdown country search
+  final Color? cursorColor;
+
   const SelectorConfig({
     this.selectorType = PhoneInputSelectorType.DROPDOWN,
     this.showFlags = true,
@@ -45,5 +51,7 @@ class SelectorConfig {
     this.leadingPadding,
     this.trailingSpace = true,
     this.useBottomSheetSafeArea = false,
+    this.dropdownColor = Colors.grey,
+    this.cursorColor = Colors.black,
   });
 }

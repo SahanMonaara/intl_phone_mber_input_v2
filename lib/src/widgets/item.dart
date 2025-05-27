@@ -8,6 +8,7 @@ class Item extends StatelessWidget {
   final bool? showFlag;
   final bool? useEmoji;
   final TextStyle? textStyle;
+  final Color? dropdownColor;
   final bool withCountryNames;
   final double? leadingPadding;
   final bool trailingSpace;
@@ -18,6 +19,7 @@ class Item extends StatelessWidget {
     this.showFlag,
     this.useEmoji,
     this.textStyle,
+    this.dropdownColor,
     this.withCountryNames = false,
     this.leadingPadding = 12,
     this.trailingSpace = true,
@@ -48,7 +50,7 @@ class Item extends StatelessWidget {
           ),
           Icon(
             Icons.keyboard_arrow_down_sharp,
-            color: Colors.grey,
+            color: dropdownColor,
             size: 14,
           ),
         ],

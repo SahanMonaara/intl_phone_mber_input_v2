@@ -7,6 +7,7 @@ import 'package:intl_phone_number_input_v2/src/utils/util.dart';
 class CountrySearchListWidget extends StatefulWidget {
   final List<Country> countries;
   final InputDecoration? searchBoxDecoration;
+  final Color? cursorColor;
   final String? locale;
   final ScrollController? scrollController;
   final bool autoFocus;
@@ -17,6 +18,7 @@ class CountrySearchListWidget extends StatefulWidget {
     this.countries,
     this.locale, {
     this.searchBoxDecoration,
+    this.cursorColor,
     this.scrollController,
     this.showFlags,
     this.useEmoji,
@@ -67,7 +69,7 @@ class _CountrySearchListWidgetState extends State<CountrySearchListWidget> {
             decoration: getSearchBoxDecoration(),
             controller: _searchController,
             autofocus: widget.autoFocus,
-            cursorColor: Colors.black,
+            cursorColor: widget.cursorColor,
             onChanged: (value) {
               final String value = _searchController.text.trim();
               return setState(
