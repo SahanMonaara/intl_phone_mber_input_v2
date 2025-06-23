@@ -21,3 +21,6 @@
 
 ## 0.0.8
 * naming convention error fix
+
+## 0.0.9
+* Customizable dropdownColor and cursorColor -> https://github.com/SahanMonaara/intl_phone_number_input_v2/pull/6
